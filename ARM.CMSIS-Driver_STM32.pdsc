@@ -47,8 +47,8 @@
 
   <components>
     <!-- CMSIS Drivers -->
-    <component Cvendor="Keil" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Capiversion="2.2.0" Cversion="3.0.0" condition="CMSIS Driver requirements">
-      <description>Ethernet MAC Driver for STM32 devices</description>
+    <component Cvendor="Keil" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Csub="HAL" Capiversion="2.2.0" Cversion="3.0.0" condition="CMSIS Driver requirements">
+      <description>Ethernet MAC Driver for STM32 HAL interface</description>
       <RTE_Components_h>  <!-- the following content goes into file 'RTE_Components.h' -->
         #define RTE_Drivers_ETH_MAC0            /* Driver ETH_MAC0 */
       </RTE_Components_h>
